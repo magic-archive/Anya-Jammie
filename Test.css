@@ -1,0 +1,62 @@
+.Beach{width:600px}
+.Character{width:130px;position:absolute;top:155px;left:0;transition:all 0.5s ease;
+}
+.container{position:absolute;}
+
+#ball.jump {
+  top: 50px;
+}
+.crab {
+width:50px;
+position:absolute;
+height:50px;
+z-index:1;
+/* top:350px; */
+right: -0px; 
+} 
+@keyframes crab {
+  from{right: -0px;} 
+  
+  to{right: 680px;}
+}
+.HomeScreen {
+  width:600px
+}
+.Play {
+width: 145px;
+height: 48px;
+display:block;
+position:absolute;
+top:219px;
+left:186px;
+}
+.Play:hover{
+  background-color: rgba(113, 253, 253, 0.986);
+  opacity: 0.3;
+}
+.ScoreBoard {
+  position:absolute;
+  top: 15px;
+  left:460px;
+}
+.Coin{
+  height: 50px;
+  width: 50px;
+  background:url("./coinsprite.png"); 
+  background-size: 200%;
+    animation: waving 1s infinite steps(2);
+}
+@keyframes waving {
+  0% {background-position: 0 0;
+}
+100%{background-position: 96px 0;}
+}  
+.MoveRight {
+  animation-name:crab;
+  animation-duration:2s;
+  animation-iteration-count:1;
+  animation-fill-mode: forwards;
+  animation-timing-function:linear;
+  z-index: 1;
+    position: absolute;
+}
